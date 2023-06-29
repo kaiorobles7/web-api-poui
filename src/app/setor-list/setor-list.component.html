@@ -1,0 +1,27 @@
+<po-page-header
+  [p-title]="'Lista de Setores'"
+  [p-actions]="[{ label: 'Novo Setor', action: criarSetor }]"
+>
+</po-page-header>
+
+<div class="po-container">
+  <po-table
+    [p-literals]="{ noData: 'Nenhum registro encontrado' }"
+    [p-columns]="[
+      { property: 'id', label: 'ID' },
+      { property: 'nome', label: 'Nome' },
+      { property: 'descricao', label: 'Descrição' },
+      {
+        property: 'actions',
+        label: 'Ações',
+        type: 'icon',
+        icons: [
+          { action: editar, icon: 'po-icon-edit', tooltip: 'Editar' },
+          { action: excluir, icon: 'po-icon-delete', tooltip: 'Excluir' }
+        ]
+      }
+    ]"
+    [p-items]="setores"
+  >
+  </po-table>
+</div>

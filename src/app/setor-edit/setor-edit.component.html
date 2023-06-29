@@ -1,0 +1,11 @@
+<po-page-default
+  [p-title]="'Editar Setor'"
+>
+  <form (ngSubmit)="atualizarSetor()">
+    <po-input [(ngModel)]="setor.idsetor" p-label="ID" p-name="idsetor"></po-input>
+    <po-input [(ngModel)]="setor.nome" p-label="Nome" p-name="nome"></po-input>
+
+    <po-button p-label="Atualizar" p-type="submit"></po-button>
+  </form>
+</po-page-default>
+
