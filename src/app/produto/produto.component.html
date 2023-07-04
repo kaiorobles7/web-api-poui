@@ -1,11 +1,12 @@
-<po-select
-  name="select"
-  p-label="PO Select"
-  [p-options]="[
-    { label: 'Option 1', value: '1' },
-    { label: 'Option 2', value: '2' }
-  ]"
->
-</po-select>
+<div class="container">
+  <div class="po-select-container">
+    <po-select
+      name="select"
+      p-label="Selecione um produto"
+      [p-options]="produtos"
+      (p-change)="onChangeProduto($event)"
+    ></po-select>
+  </div>
+</div>
 
 

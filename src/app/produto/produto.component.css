@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Ajusta o alinhamento vertical para o topo */
+  height: 100vh; /* Define a altura do contêiner */
+  padding: 200px; /* Adiciona espaçamento interno ao contêiner */
+}
+
+.po-select-container {
+  text-align: initial; /* Ajusta o alinhamento do texto para a esquerda */
+  margin-top: 100px; /* Adiciona espaçamento superior ao seletor */
+}
