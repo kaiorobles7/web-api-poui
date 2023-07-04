@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SetorEditComponent } from './setor-edit.component';
+import { ProdutoTsComponent } from './produto.component';
 
-describe('SetorEditComponent', () => {
-  let component: SetorEditComponent;
-  let fixture: ComponentFixture<SetorEditComponent>;
+describe('ProdutoTsComponent', () => {
+  let component: ProdutoTsComponent;
+  let fixture: ComponentFixture<ProdutoTsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SetorEditComponent ]
+      declarations: [ ProdutoTsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SetorEditComponent);
+    fixture = TestBed.createComponent(ProdutoTsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
